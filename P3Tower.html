@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Notebook Latitude-3540</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="tabs">
+            <a href="AtaProdutos.html" class="tab-button">Ata de Produtos</a>
+        </div>
+    </nav>
+
+    <section id="detalhes-produto">
+        <div class="produto-detalhes">
+            <div class="produto-conteudo">
+                <div class="imagem-principal">
+                    <img src="P3 Tower.png" alt="Notebook Latitude-3450" id="imagem-grande" class="produto-imagem" onclick="trocarImagem(this.src)">
+                    <div class="botao-container"> <!-- Criar uma div para o botão -->
+                        <a href="https://www.whatsapp.com/catalog/558173311521/?app_absent=0" class="btn" target="_blank">Aderir Ata</a>
+                    </div>           
+                </div>
+                <div class="galeria-imagens">
+                    <h3>Galeria de Imagens</h3>
+                    <div class="carrossel">
+                        <img src="P3 Tower.png" alt="Imagem 1" class="thumbnail active" onclick="trocarImagem('P3 Tower.png')">
+                        <img src="p3Tower 3D.jpeg" alt="Imagem 2" class="thumbnail" onclick="trocarImagem('p3Tower 3D.jpeg')">
+                        <img src="p3 TowerLado.jpeg" alt="Imagem 3" class="thumbnail" onclick="trocarImagem('p3 TowerLado.jpeg')">
+                        <img src="p3 TowerFront.jpeg" alt="Imagem 4" class="thumbnail" onclick="trocarImagem('p3 TowerFront.jpeg')">
+                    </div>
+
+                    <div class="galeria-imagens">
+                        <h3>Especificações Técnicas</h3>
+                        <div class="specs-container">
+                            <div class="spec-card">
+                                <i class="fas fa-microchip"></i> <!-- Ícone de processador -->
+                                <div class="spec-info">
+                                    <h4>Processador</h4>
+                                    <p>Intel® Core™ i5-13500</p>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <i class="fas fa-memory"></i> <!-- Ícone de memória -->
+                                <div class="spec-info">
+                                    <h4>Memória RAM</h4>
+                                    <p> 32GB (2x 16GB) DDR5 4400MHz
+                                        – expansível até 128GB.</p>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <i class="fas fa-hdd"></i> <!-- Ícone de armazenamento -->
+                                <div class="spec-info">
+                                    <h4>Armazenamento</h4>
+                                    <p>SSD 1TB NVMe M.2.</p>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <i class="fas fa-desktop"></i> <!-- Ícone de tela -->
+                                <div class="spec-info">
+                                    <h4>Placa de Vídeo</h4>
+                                    <p>NVIDIA T1000 8GB GDDR6</p>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <i class="fas fa-gavel"></i> <!-- Ícone de martelo -->
+                                <div class="spec-info">
+                                    <h4>Saldo para Adesão</h4>
+                                    <p>32 unidades</p>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <i class="fas fa-mouse"></i> <!-- Ícone de mouse -->
+                                <div class="spec-info">
+                                    <h4>Periféricos</h4>
+                                    <p>Mouse Ótico USB 1000dpi.</p>
+                                    <p>Teclado USB padrão ABNT-2.</p>
+                                    <p>Adaptador MiniDP para-DisplayPort</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <a href="https://www.whatsapp.com/catalog/558173311521/?app_absent=0" class="btn" target="_blank">Aderir Ata</a>
+                    </div>
+        </div>
+    </section>
+
+    <script>
+        // Função para trocar a imagem principal
+        function trocarImagem(imagem) {
+            document.getElementById('imagem-grande').src = imagem;
+            // Adiciona classe 'active' para a miniatura clicada
+            var thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(function(thumb) {
+                thumb.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Portfólio de Produtos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

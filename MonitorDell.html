@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Notebook Latitude-3540</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="tabs">
+            <a href="produtos.html" class="tab-button">Portfólio de Produtos</a>
+        </div>
+    </nav>
+
+    <section id="detalhes-produto">
+        <div class="produto-detalhes">
+            <div class="produto-conteudo">
+                <div class="imagem-principal">
+                    <img id="imagem-grande" src="img1.png" alt="Notebook Latitude-3450" class="produto-imagem">
+                </div>
+                <div class="galeria-imagens">
+                    <h3>Galeria de Imagens</h3>
+                    <div class="carrossel">
+                        <img src="WhatsApp Image 2024-10-08 at 08.17.35.jpeg" alt="Imagem 1" class="thumbnail active" onclick="trocarImagem('img1.png')">
+                        <img src="latitude-3450 (2).png" alt="Imagem 2" class="thumbnail" onclick="trocarImagem('latitude-3450 (2).png')">
+                        <img src="lenovo-laptop-ideapad-3-15-intel-hero.webp" alt="Imagem 3" class="thumbnail" onclick="trocarImagem('lenovo-laptop-ideapad-3-15-intel-hero.webp')">
+                        <img src="img4.png" alt="Imagem 4" class="thumbnail" onclick="trocarImagem('img4.png')">
+                    </div>
+
+                    <div class="galeria-imagens">
+                        <h3>Especificações Técnicas</h3>
+                        <div class="specs-container">
+                            <div class="spec-card">
+                                <i class="fas fa-microchip"></i> <!-- Ícone de processador -->
+                                <div class="spec-info">
+                                    <h4>Processador</h4>
+                                    <p>Intel® Core™ i5 13ª geração</p>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <i class="fas fa-memory"></i> <!-- Ícone de memória -->
+                                <div class="spec-info">
+                                    <h4>Memória RAM</h4>
+                                    <p>8GB DDR4</p>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <i class="fas fa-hdd"></i> <!-- Ícone de armazenamento -->
+                                <div class="spec-info">
+                                    <h4>Armazenamento</h4>
+                                    <p>256GB SSD</p>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <i class="fas fa-desktop"></i> <!-- Ícone de tela -->
+                                <div class="spec-info">
+                                    <h4>Tela</h4>
+                                    <p>14" Full HD</p>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <i class="fas fa-gavel"></i> <!-- Ícone de martelo -->
+                                <div class="spec-info">
+                                    <h4>Sistema Operacional</h4>
+                                    <p>Windows 11</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <a href="https://www.whatsapp.com/catalog/558173311521/?app_absent=0" class="btn" target="_blank">Aderir Ata</a>
+                    </div>
+                    
+                    
+        </div>
+    </section>
+
+    <script>
+        // Função para trocar a imagem principal
+        function trocarImagem(imagem) {
+            document.getElementById('imagem-grande').src = imagem;
+            // Adiciona classe 'active' para a miniatura clicada
+            var thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(function(thumb) {
+                thumb.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Portfólio de Produtos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
